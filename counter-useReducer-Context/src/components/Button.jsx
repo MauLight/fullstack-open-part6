@@ -1,0 +1,9 @@
+import { useCounterDispatch } from "../context/CounterContext"
+
+
+export const Button = ({ type, label }) => {
+
+    const dispatch = useCounterDispatch()
+
+    return <button onClick={() => dispatch({ type: type })}>{label}</button>
+}

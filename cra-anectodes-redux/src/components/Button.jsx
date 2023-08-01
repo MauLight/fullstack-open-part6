@@ -1,0 +1,1 @@
+export const Button = ({ text, handler }) => <button onClick={handler}><p className="btn-text w-[42px] py-4">{text}</p></button>
